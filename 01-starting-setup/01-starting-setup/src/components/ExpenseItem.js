@@ -1,10 +1,11 @@
 import ExpenseDate from "./ExpenseDate";
+import Card from "./Card";
 //A component in javascript react is a javascript function
 import "./ExpenseItem.css";
 //We now pass in properties as the arguments in the function
 function ExpenseItem(props) {
   return (
-    <div className="expense-item">
+    <Card className="expense-item">
       {/* You use className to attach the css class to the div, class is a reserved word */}
       <ExpenseDate date={props.date} />
       {/* funneling multiple components that are nested inside eachother, were passing data from app into expense item, then outputting some of the data
@@ -16,10 +17,7 @@ function ExpenseItem(props) {
         {/* You use curly braces to import javascript inside html code, they are called dynamic placeholders */}
         <div className="expense-item__price">{props.amount}</div>
       </div>
-      <div className="expense-item__description">
-        <h2>Quantity: {props.quantity}</h2>
-      </div>
-    </div>
+    </Card>
   );
 }
 
