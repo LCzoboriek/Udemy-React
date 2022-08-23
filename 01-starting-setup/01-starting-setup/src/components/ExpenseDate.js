@@ -16,3 +16,6 @@ function ExpenseDate(props) {
 }
 
 export default ExpenseDate;
+
+// Its best practice to keep your components small and focused, rather then big, try adding a feature at first, then extracting
+// that into its own file, to see if it still works. This can be helped through rigorous planning

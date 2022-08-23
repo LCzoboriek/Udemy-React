@@ -1,4 +1,4 @@
-import ExpenseItem from "./components/ExpenseItem";
+import Expenses from "./components/Expenses";
 
 function App() {
   const expenses = [
@@ -35,30 +35,8 @@ function App() {
   return (
     <div>
       <h2>Let's get started!</h2>
-      <ExpenseItem
-        title={expenses[0].title}
-        amount={expenses[0].amount}
-        date={expenses[0].date}
-        quantity={expenses[0].quantity}
-      ></ExpenseItem>
-      <ExpenseItem
-        title={expenses[1].title}
-        amount={expenses[1].amount}
-        date={expenses[1].date}
-        quantity={expenses[1].quantity}
-      ></ExpenseItem>
-      <ExpenseItem
-        title={expenses[2].title}
-        amount={expenses[2].amount}
-        date={expenses[2].date}
-        quantity={expenses[2].quantity} // This process is adding attributes from the above array, and assigning them to received attribute values
-      ></ExpenseItem>
-      <ExpenseItem
-        title={expenses[3].title}
-        amount={expenses[3].amount}
-        date={expenses[3].date}
-        quantity={expenses[3].quantity} // This process is adding attributes from the above array, and assigning them to received attribute values
-      ></ExpenseItem>
+      <Expenses items={expenses} />
+      {/* Extract the following components into its own component */}
     </div> // Html inside a javascript function, this works because of the feature called jsx, it was introduced by the react team
     //This only works due to the transformation stuff behind the scenes
   );
