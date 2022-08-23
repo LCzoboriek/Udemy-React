@@ -1,5 +1,5 @@
 import ExpenseDate from "./ExpenseDate";
-import Card from "./Card";
+import Card from "../UI/Card";
 //A component in javascript react is a javascript function
 import "./ExpenseItem.css";
 //We now pass in properties as the arguments in the function
